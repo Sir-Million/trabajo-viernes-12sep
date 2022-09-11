@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pagina tres</title>
+	<link rel="shortcut icon" type="image/x-icon" href="https://i.imgur.com/pIPAoQz.png">
+	<style type="text/css">
+
+		.container
+		{
+			margin: 0;
+			padding: 0;
+			display: flex;
+  			align-items: center;
+			position: fixed;
+			width: 100%;
+			height: 100%;
+		}
+
+		h1
+		{
+			width: 60%;
+			text-align: center;
+			/* centrado vertical */
+			margin: 0;
+			padding: 0;
+			margin: auto;
+			transition: 0.5s;
+		}
+
+		@keyframes palpitar {
+			from {
+				text-shadow: 0 0 0 limegreen;
+				color: white;
+			}
+			50% {
+				text-shadow: 0 0 30px limegreen;
+				color: black;
+			}
+			to {
+				text-shadow: 0 0 0 limegreen;
+				color: white;
+			}
+		}
+
+		h1:hover
+		{
+			scale: 1.1;
+			transition: 0.5s;
+			animation-name: palpitar;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+		}
+
+	</style>
+</head>
+
+<body style="font-family: 'Silkscreen'; background: #323232; color: white;">
+
+	<div class="container">
+		<h1>Bienvenido a los datos sobre el 12 de septiembre</h1>
+	</div>
+	
+	<!-- recursos externos a esta pagina -->
+
+    <style>
+		@import url('https://fonts.googleapis.com/css2?family=Silkscreen&display=swap');
+	</style>
+
+</body>
+</html>
